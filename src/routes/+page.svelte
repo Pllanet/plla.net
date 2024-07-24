@@ -1,3 +1,7 @@
+<script>
+    import { goto } from '$app/navigation';
+</script>
+
 <div class="flex h-screen">
     <div class="m-auto my-20">
         <!--
@@ -5,7 +9,7 @@
                 Hi!
             </h1>
         -->
-        <img class="size-16" src="$lib/assets/globe.png" alt="🌍" />
+        <input on:click={() => {goto('/globe')}} class="size-16" type="image" src="$lib/assets/globe.png" alt="🌍" />
     </div>
 </div>
 
